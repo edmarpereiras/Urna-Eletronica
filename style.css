@@ -16,7 +16,7 @@ body {
     font-weight: 600;
 }
 
-section, .instructions {
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,14 +24,48 @@ section, .instructions {
 }
 
 .instructions {
-    margin-right: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+    margin-top: 4rem;
+}
+
+h3 {
+    font-size: 2em;
+    color: white;
+    margin-top: 2rem;
+}
+
+.instructions {
+    margin: 0;
 }
 
 .card-deck {
-    display: flex;
-    width: 60%;
-    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    margin: 3rem 20rem 0rem 0rem;
     gap: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #131212;
+    border-radius: 30px;
 }
 
 .card {
@@ -64,7 +98,7 @@ table th {
     width: 41rem;
     height: 2rem;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-    margin-top: 8rem;
+    margin-top: 3rem;
     background-color: #E5E5E7;
 }
 
@@ -79,7 +113,8 @@ table th {
     display: flex;
     align-items: center;
     position: absolute;
-    margin-top: 5.6rem;
+    margin-top: 13.3rem;
+    margin-bottom: 6rem;
 }
 
 .tela {
@@ -169,7 +204,7 @@ span {
 }
 
 .numero {
-    display: inline-block;
+    display: table-cell;
     width: 30px;
     height: 40px;
     border: 1px solid black;
@@ -303,7 +338,7 @@ span {
     position: relative;
     color: white;
     background: black;
-    margin-top: 25rem;
+    margin-top: 23rem;
     text-align: center;
 }
 
